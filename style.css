@@ -1,0 +1,222 @@
+.category-grid {
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+header {
+    background-color: rgb(5, 129, 36);
+}
+
+.main_text {
+    text-align: center;
+    font-size: 150%;
+}
+
+.logo {
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 300%;
+    padding-left: 15px;
+}
+
+#glaw {
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    max-width: 900px; 
+} 
+
+.category-card {
+    aspect-ratio: 1 / 1; 
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.category-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-finance {
+    background-color: #1700c3;
+}
+
+.card-strategy {
+    background-color: #d96b27;
+}
+
+.card-analytics {
+    background-color: #06b346;
+}
+
+.card-marketing {
+    background-color: #ece000;
+}
+
+.card-it {
+    background-color: #ff86f1;
+}
+
+.card-legal {
+    background-color: #ad0434;
+}
+
+.foot {
+    color: aliceblue;
+}
+
+.mnogo {
+    height: 200px;
+}
+
+footer {
+    background-color: rgb(195, 233, 192);
+}
+
+/*Мобильная адаптация */
+
+
+@media (max-width: 900px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+        gap: 16px;
+        padding: 30px 15px;
+    }
+
+    .logo {
+        font-size: 220%;
+        padding-left: 10px;
+    }
+
+    #glaw {
+        font-size: 220%;
+    }
+
+    .main_text {
+        font-size: 130%;
+        padding: 0 12px;
+    }
+
+    .category-card {
+        padding: 20px;
+    }
+
+    .category-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .mnogo {
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        gap: 14px;
+        padding: 24px 12px;
+    }
+
+    .logo {
+        font-size: 180%;
+        padding-left: 8px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #glaw {
+        font-size: 170%;
+        line-height: 1.25;
+        padding: 0 10px;
+    }
+
+    .main_text {
+        font-size: 110%;
+        line-height: 1.45;
+        padding: 0 14px;
+    }
+
+    .category-card {
+        padding: 18px;
+        max-width: 280px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .category-title {
+        font-size: 0.95rem;
+        letter-spacing: 0.8px;
+    }
+
+    .mnogo {
+        height: 60px;
+    }
+
+    header,
+    footer {
+        padding: 8px 0;
+    }
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 380px) {
+    .category-grid {
+        max-width: 100%;
+        padding: 16px 10px;
+    }
+
+    .logo {
+        font-size: 150%;
+    }
+
+    #glaw {
+        font-size: 150%;
+    }
+
+    .main_text {
+        font-size: 100%;
+    }
+
+    .category-card {
+        padding: 14px;
+        max-width: 100%;
+    }
+
+    .category-title {
+        font-size: 0.85rem;
+    }
+}
